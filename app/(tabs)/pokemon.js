@@ -22,7 +22,7 @@ export default function Pokemon() {
   const { isDarkTheme } = useThemes(); // Get theme from context
 
   useEffect(() => {
-    fetch("https://pokemon-api-nssw.onrender.com/pokemon", {
+    fetch("http://192.168.100.10:9090/pokemon", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
